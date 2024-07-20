@@ -128,7 +128,6 @@ export const register = catchAsyncErrors(async (req, res, next) => {
       return next(new ErrorHandler("Please provide email and password!", 400));
     }
     const user = await User.findOne({ email }).select("+password");
-    console.log(user) ;
     if (!user) {
       return next(new ErrorHandler("Invalid email  or password!", 400));
     }
