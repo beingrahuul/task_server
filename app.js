@@ -20,7 +20,7 @@ app.use(express.urlencoded({extended : true}));
 
   
 app.use(cors({
-  origin: 'https://task-client-eight.vercel.app/', // Specify the frontend origin
+  origin: 'https://task-client-eight.vercel.app', // Specify the frontend origin
   credentials: true
 }));
 
